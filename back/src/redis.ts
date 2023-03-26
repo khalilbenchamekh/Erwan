@@ -1,0 +1,8 @@
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { createClient } from 'redis';
+
+const client = createClient({
+  url: process.env.REDIS_URL
+});
+
+export default client;
